@@ -1,0 +1,420 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 800px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+h1 {
+    font-size: small;
+}
+.connect {
+    background-color: #1b99d4;
+    border: 2.5px;
+    border-radius: 2.5px;
+    padding: 10px;
+}
+.connect a {
+    color: #f0f0f0;
+}
+.hero {
+    background-color: #1b99d4;
+    display: flex;
+}
+.hero p {
+    color: #f0f0f0;
+    margin-left: 100px;
+    font-size: 20px;
+    margin-top: 100px;
+    font-size: 50px;
+    
+}
+.hero img {
+margin-left: 500px;
+}
+#ban {
+    margin-left: 110px;
+    margin-top: 0px;
+    width: 1000px;
+    height: 500px;
+    
+}
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.stat {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stat span {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f00;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 18px;
+}
+#h2 {
+    text-align: center;
+}
+#verte {
+    color: green;
+}
+#jaune {
+    color: rgb(255, 148, 26);
+}
+.why-choose-us{
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+    justify-content: space-between;
+}
+.carte {
+    background-color: #f8fbfb;
+}
+.card {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#img1 {
+    width: 50px;
+    height: 50px;
+}
+.alumni {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100px;
+    height: 100px; /* Assurez-vous que la hauteur correspond à la largeur pour obtenir un cercle parfait */
+    object-fit: cover;
+    border-radius: 50%; /* Rendre l'image ronde */
+    margin-left: -230px;
+    margin-top: 20px;
+}
+.voir {
+    background-color: #1b99d4;
+    border: 2.5px solid transparent; /* Ajout d'une couleur de bordure transparente pour fixer l'épaisseur */
+    border-radius: 2.5px;
+    padding: 10px;
+    text-align: center;
+    width: 190px; /* Largeur fixe de l'élément */
+    margin: 20px auto; /* Centrer horizontalement et appliquer une marge de 20px en haut et en bas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+}
+
+.voir a {
+    color: #f0f0f0;
+}
+/* Styles pour la section des programmes */
+.parent {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+   
+    .programs {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    
+    .program {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 800px;
+        margin-left: 100px;
+    }
+    
+    .program img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    
+    .program h3 {
+        margin-top: 0;
+    }
+    
+    .program p {
+        margin-bottom: 15px;
+    }
+    
+    .program a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    .program a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Styles pour la section de création de compte */
+    
+    .registration-card {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 0px;
+    }
+    
+    .registration-card h2 {
+        margin-bottom: 20px;
+    }
+    
+    .registration-card form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .registration-card .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .registration-card label {
+        font-weight: bold;
+    }
+    
+    .registration-card input[type="text"],
+    .registration-card input[type="email"],
+    .registration-card input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .registration-card button[type="submit"] {
+        background-color: #1b99d4;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .registration-card button[type="submit"]:hover {
+        background-color: #1b99d4;
+    }
+    
+    .annonce {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+    }
+    .tuteurs {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .tuteur {
+        flex-basis: calc(33.33% - 20px); /* Pour répartir les cartes en 3 colonnes avec un espace de 20px entre elles */
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tuteur img {
+        max-width: 100%;
+        
+    }
+    
+    .tuteur h3 {
+        margin-top: 10px;
+    }
+    
+    .tuteur p {
+        margin-top: 5px;
+    }
+    
+    .tuteur a {
+        display: inline-block;
+        color: #007bff;
+        
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    
+    .tuteur a:hover {
+        background-color: #0056b3;
+    }
+    .faq {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .faq-item {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .faq-item .faq-image {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .faq-item h3 {
+        margin-top: 0;
+    }
+    
+    .faq-item p {
+        margin-top: 5px;
+    }
+    .partenaires {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        margin-left: 450px;
+    }
+    
+    .partenaire {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .partenaire img {
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .partenaire h3 {
+        margin: 0;
+    }
+    footer {
+        background-color: #1b99d4;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-section-1,
+    .footer-section-2 {
+        display: flex;
+        vertical-align: top;
+    }
+    
+    .footer-section-1 {
+        margin-right: 20px;
+    }
+    
+    .footer-logo img {
+        max-width: 100px;
+    }
+    
+    .social-media-links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .social-media-links a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    
+    .social-media-links a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer-contact-info {
+        margin-top: 10px;
+    }
+    
+    .footer-contact-info a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-contact-info a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer-section-2 p {
+        margin: 0;
+        font-size: 14px;
+    }
+    
