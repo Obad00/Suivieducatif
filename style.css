@@ -29,43 +29,21 @@ nav a {
 h1 {
     font-size: small;
 }
-.connect {
-    background-color: #1b99d4;
-    border: 2.5px;
-    border-radius: 2.5px;
-    padding: 10px;
+.bg-hero {
+    background-color: #1b99d4; /* Ajoute la couleur d'arrière-plan */
+    position: relative; /* Assurez-vous que le conteneur parent est positionné */
 }
-.connect a {
-    color: #f0f0f0;
+
+.img-half {
+    position: absolute; /* Rend l'image absolument positionnée */
+    right: 0; /* Aligne l'image à droite */
+    top: 0; /* Aligne l'image en haut */
+    bottom: 0; /* Aligne l'image en bas */
+    height: 100%; /* Assure que l'image occupe toute la hauteur du conteneur */
+    width: auto; /* Maintient le ratio de l'image */
 }
-.hero {
-    background-color: #1b99d4;
-    display: flex;
-}
-.hero p {
-    color: #f0f0f0;
-    margin-left: 100px;
-    font-size: 20px;
-    margin-top: 100px;
-    font-size: 50px;
-    
-}
-.hero img {
-margin-left: 500px;
-}
-#ban {
-    margin-left: 110px;
-    margin-top: 0px;
-    width: 1000px;
-    height: 500px;
-    
-}
-.statistics {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px;
-}
+
+
 
 .stat {
     width: 30%;
@@ -92,42 +70,7 @@ margin-left: 500px;
 #jaune {
     color: rgb(255, 148, 26);
 }
-.why-choose-us{
-    display: flex;
-    margin-left: 90px;
-    margin-right: 90px;
-    justify-content: space-between;
-}
-.carte {
-    background-color: #f8fbfb;
-}
-.card {
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+/*  */
 #img1 {
     width: 50px;
     height: 50px;
@@ -203,6 +146,7 @@ margin-left: 500px;
     
     .program h3 {
         margin-top: 0;
+        font-size: larger;
     }
     
     .program p {
@@ -272,97 +216,44 @@ margin-left: 500px;
         margin-bottom: 10px;
         display: flex;
     }
-    .tuteurs {
-        display: flex;
-        justify-content: space-between;
-    }
     
-    .tuteur {
-        flex-basis: calc(33.33% - 20px); /* Pour répartir les cartes en 3 colonnes avec un espace de 20px entre elles */
-        margin-bottom: 20px;
-        padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
     
-    .tuteur img {
-        max-width: 100%;
-        
-    }
-    
-    .tuteur h3 {
-        margin-top: 10px;
-    }
-    
-    .tuteur p {
-        margin-top: 5px;
-    }
-    
-    .tuteur a {
-        display: inline-block;
-        color: #007bff;
-        
-        text-decoration: none;
-        padding: 8px 16px;
-        border-radius: 4px;
-        margin-top: 10px;
-    }
-    
-    .tuteur a:hover {
-        background-color: #0056b3;
-    }
-    .faq {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    .faq-item {
-        margin-bottom: 20px;
-        padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-    .faq-item .faq-image {
-        max-width: 100%;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-    
-    .faq-item h3 {
-        margin-top: 0;
-    }
-    
-    .faq-item p {
-        margin-top: 5px;
-    }
     .partenaires {
-        max-width: 800px;
+        max-width: 100%;
         margin: 0 auto;
         display: flex;
-        margin-left: 450px;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: nowrap;
     }
     
-    .partenaire {
+    .partenaires .partenaire {
+        flex: 1;
         margin-bottom: 20px;
-        padding: 20px;
+        padding: 0px;
         background-color: #f9f9f9;
+        border: 2px solid rgb(156, 156, 156);
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         text-align: center;
+        max-width: 200px; /* Set a fixed max-width to ensure smaller cards */
+        box-sizing: border-box;
     }
     
-    .partenaire img {
-        max-width: 200px;
-        height: auto;
-        margin-bottom: 10px;
+    .partenaires .partenaire img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        margin: 0 auto 10px auto; /* Center the image horizontally */
+        display: block;
     }
     
-    .partenaire h3 {
+    .partenaires .partenaire h3 {
         margin: 0;
+        color: #1b99d4;
+        text-align: left;
     }
+    
     footer {
         background-color: #1b99d4;
         color: #fff;
@@ -370,51 +261,4 @@ margin-left: 500px;
         text-align: center;
     }
     
-    .footer-section-1,
-    .footer-section-2 {
-        display: flex;
-        vertical-align: top;
-    }
-    
-    .footer-section-1 {
-        margin-right: 20px;
-    }
-    
-    .footer-logo img {
-        max-width: 100px;
-    }
-    
-    .social-media-links {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .social-media-links a {
-        color: #fff;
-        text-decoration: none;
-        margin-right: 10px;
-    }
-    
-    .social-media-links a:hover {
-        text-decoration: underline;
-    }
-    
-    .footer-contact-info {
-        margin-top: 10px;
-    }
-    
-    .footer-contact-info a {
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    .footer-contact-info a:hover {
-        text-decoration: underline;
-    }
-    
-    .footer-section-2 p {
-        margin: 0;
-        font-size: 14px;
-    }
-    
+   

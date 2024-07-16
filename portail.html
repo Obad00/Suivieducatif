@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KARANG</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,99 +23,164 @@
         </nav>
     </header>
 
-    <main>
-<div>
-    <section class="hero">
-        <p>Bienvenue sur KARANG, une plateforme de <br>suivi éducatif, où les parents peuvent <br>suivre de près l'évolution de leurs enfants.</p>
-        <img src="images/woman-teaching-kids-class_23-2148892552.jpg" alt="" id="ban">
-    </section>
-</div>
+   
 
-        <section >
-            <h2 id="h2">Statistiques</h2>
-            <div class="statistics">
-                <div class="stat">
-                    <span id="verte">100%</span>
-                    <p>De professeurs renommés</p>
-                </div>
-                <div class="stat">
-                    <span id="jaune">+10</span>
-                    <p>Etablissements</p>
-                </div>
-                <div class="stat">
-                    <span>90%</span>
-                    <p>Taux de réussite</p>
-                </div>
-            </div>
-            
-        </section>
-    </main>
+   
+    <div class="bg-hero px-6 md:px-12 flex items-center justify-center h-80 overflow-hidden" style="background-color: #1b99d4;">
+      <div class="flex flex-col gap-6 md:flex-row items-center max-w-8xl w-full">
+          <div class="w-full md:w-1/2 flex items-center justify-center md:justify-start">
+              <h2 class="text-4xl lg:text-4xl text-center md:text-left text-white leading-tight font-medium">
+                  Bienvenue sur KARANG, une plateforme de
+                  <br>suivi éducatif, où les parents peuvent
+                  <br>suivre de près l'évolution de leurs enfants.
+              </h2>
+          </div>
+          <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+              <img src="images/woman-teaching-kids-class_23-2148892552.jpg" class="w-full max-h-80">
+          </div>
+      </div>
+  </div>
+  
+  
+  <section class="text-center">
+    <h2 id="h2" class="mt-10 text-3xl font-bold mb-8">Statistiques</h2>
+    <div class="flex flex-wrap justify-center gap-8">
+        <div class="stat w-1/3 text-center mb-8">
+            <span id="verte" class="text-green-500 text-4xl font-bold block">100%</span>
+            <p class="text-gray-600 text-lg">De professeurs renommés</p>
+        </div>
+        <div class="stat w-1/3 text-center mb-8">
+            <span id="jaune" class="text-orange-500 text-4xl font-bold block">+10</span>
+            <p class="text-gray-600 text-lg">Etablissements</p>
+        </div>
+        <div class="stat w-1/3 text-center mb-8">
+            <span class="text-blue-500 text-4xl font-bold block">90%</span>
+            <p class="text-gray-600 text-lg">Taux de réussite</p>
+        </div>
+    </div>
+</section>
 
-    <main classe="carte">
-        <h2 id="h2">Pourquoi choisir nos programmes ?</h2>
-        <br>
-        <section class="why-choose-us">
-            
-            <div class="card">
-                <img src="images/hourglass_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Excellence académique" id="img1">
-                <h3>Excellence académique</h3>
-                <p>Notre programme d'éducation pour les jeunes a été récompensé par le Prix de l'Innovation en Education pour son approche interactive et créative de l'apprentissage des sciences. Cela montre notre engagement envers l'excellence académique dès le plus jeune âge.</p>
-            </div>
-            <div class="card">
-                <img src="images/hourglass_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Flexibilité" id="img1">
-                <h3>Flexibilité</h3>
-                <p>Nous offrons des cours après l'école, le week-end et même pendant les vacances scolaires, ce qui permet aux enfants de s'inscrire à des cours qui correspondent à leur emploi du temps chargé.</p>
-            </div>
-            <div class="card">
-                <img src="images/hourglass_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Encadrement personnalisé" id="img1">
-                <h3>Encadrement personnalisé</h3>
-                <p>Chaque enfant est jumelé à un mentor qui le soutient dans son parcours académique, l'aide à surmonter les défis et l'encourage à atteindre son plein potentiel.</p>
-            </div>
-        </section>
-    </main>
+
+  
+
+<section class="carte  py-10 px-6 md:px-20" style="background-color: #F8FBFB;">
+  <h2 id="h2" class="text-center text-3xl font-bold mb-8">Pourquoi choisir nos programmes ?</h2>
+  <div class="why-choose-us flex flex-wrap gap-8 justify-center">
+      <div class="card bg-white p-6 rounded-lg shadow-md max-w-sm">
+          <div class="bg-blue-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #1b99d4;">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-center">Excellence académique</h3>
+          <p class="text-gray-700 text-center">Notre programme d'éducation pour les jeunes a été récompensé par le Prix de l'Innovation en Education pour son approche interactive et créative de l'apprentissage des sciences. Cela montre notre engagement envers l'excellence académique dès le plus jeune âge.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-lg shadow-md max-w-sm">
+          <div class="bg-blue-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #1b99d4;">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-center">Flexibilité</h3>
+          <p class="text-gray-700 text-center">Nous offrons des cours après l'école, le week-end et même pendant les vacances scolaires, ce qui permet aux enfants de s'inscrire à des cours qui correspondent à leur emploi du temps chargé.</p>
+      </div>
+      <div class="card bg-white p-6 rounded-lg shadow-md max-w-sm">
+          <div class="bg-blue-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #1b99d4;">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-center">Encadrement personnalisé</h3>
+          <p class="text-gray-700 text-center">Chaque enfant est jumelé à un mentor qui le soutient dans son parcours académique, l'aide à surmonter les défis et l'encourage à atteindre son plein potentiel.</p>
+      </div>
+  </div>
+</section>
     <br>
     <br>
+    <div class="container mx-auto py-8">
+      <h2 id="h2" class="text-center text-3xl font-bold mb-8">Nos alumnis</h2>
+      <div class="flex flex-wrap justify-center">
+       
+        <!-- Première carte -->
+            <div class="relative mt-16 mb-32 max-w-sm mx-auto mt-24">
+              <div class="rounded overflow-hidden shadow-md bg-white">
+                <div class="absolute -mt-20 w-full flex justify-center">
+                  <div class="h-32 w-32">
+                    <img src="images/surrealist-portrait-kid_23-2151426296.jpg" class="rounded-full object-cover h-full w-full shadow-md" />
+                  </div>
+                </div>
+                <div class="px-6 mt-16">
+                  <h1 class="font-bold text-3xl text-center mb-1">Souleymane Ndiaye</h1>
+                  <p class="text-gray-800 text-sm text-center">Développeur fullstack</p>
+                  <p class="text-center text-gray-600 text-base pt-3 font-normal">
+                    Je suis passionné par la création d'applications web de A à Z. Avec une expertise 
+                    à la fois en développement frontend et backend, je suis capable de transformer des idées en produits fonctionnels.
+                  </p>
+                  <div class="w-full flex justify-center pt-5 pb-5">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+                    <a href="#" class="mx-5 text-blue-500">Voir profil </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <main>
-        <h2 id="h2">Nos alumnis</h2>
-        <br>
-        <section class="alumni">
-            
-            <div class="card">
-               
-                <div class="card-info">
-                    <img src="images/surrealist-portrait-kid_23-2151426296.jpg" alt="Souleymane Ndiaye" id="img2">
-                    <h3>Souleymane Ndiaye</h3>
-                    <h4>Développeur fullstack</h4>
-                    <p>Je suis passionné par la création d'applications web de A à Z. Avec une expertise à la fois en développement frontend et backend, je suis capable de transformer des idées en produits fonctionnels.</p>
-                    <a href="#">Lire la suite</a>
+                  
+                    <!-- Deuxième carte -->
+                  
+            <div class="relative mt-16 mb-32 max-w-sm mx-auto mt-24">
+              <div class="rounded overflow-hidden shadow-md bg-white">
+                <div class="absolute -mt-20 w-full flex justify-center">
+                  <div class="h-32 w-32">
+                    <img src="images/portrait-young-student-with-book-education-day_23-2150980037.jpg" class="rounded-full object-cover h-full w-full shadow-md" />
+                  </div>
                 </div>
+                <div class="px-6 mt-16">
+                  <h1 class="font-bold text-3xl text-center mb-1">Anna Marone</h1>
+                  <p class="text-gray-800 text-sm text-center">Développeur front-end</p>
+                  <p class="text-center text-gray-600 text-base pt-3 font-normal">
+                    Je suis fasciné par la construction des fondations invisibles qui font fonctionner les applications web.
+                     En tant que développeur Backend, je me spécialise dans 
+                    la création et la gestion des serveurs, des bases de données et de la logique métier.
+                  </p>
+                  <div class="w-full flex justify-center pt-5 pb-5">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 
+                      1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 
+                      2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566
+                       0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 
+                       2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+                    <a href="#" class="mx-5 text-blue-500">Voir profil</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card">
-                <div class="card-info">
-                    <img src="images/portrait-young-student-with-book-education-day_23-2150980037.jpg" alt="Anna Marone" id="img2">
 
-                    <h3>Anna Marone</h3>
-                    <h4>Développeur front-end</h4>
-                    <p>En tant que développeur Frontend, je suis obsédé par l'expérience utilisateur et la création d'interfaces visuellement attrayantes et intuitives. Je maîtrise les langages de balisage, les styles et les frameworks Frontend pour créer des expériences web fluides et réactives.</p>
-                    <a href="#">Lire la suite</a>
-                </div>
+      
+        <!-- Troisième carte -->
+        <div class="relative mt-16 mb-32 max-w-sm mx-auto mt-24">
+          <div class="rounded overflow-hidden shadow-md bg-white">
+            <div class="absolute -mt-20 w-full flex justify-center">
+              <div class="h-32 w-32">
+                <img src="images/portrait-young-student-with-book-education-day_23-2150980034.jpg" class="rounded-full object-cover h-full w-full shadow-md" />
+              </div>
             </div>
-            <div class="card">
-                <div class="card-info">
-                    <img src="images/portrait-young-student-with-book-education-day_23-2150980034.jpg" alt="Amadou Barro" id="img2">
-                    <h3>Amadou Barro</h3>
-                    <h4>Développeur back-end</h4>
-                    <p>En tant que développeur Backend, je me spécialise dans la création et la gestion des serveurs, des bases de données et de la logique métier. Je suis passionné par la construction des fondations invisibles qui font fonctionner les applications web.</p>
-                    <a href="#">Lire la suite</a>
-                </div>
+            <div class="px-6 mt-16">
+              <h1 class="font-bold text-3xl text-center mb-1">Amadou Barro</h1>
+              <p class="text-gray-800 text-sm text-center">Développeur back-end</p>
+              <p class="text-center text-gray-600 text-base pt-3 font-normal">
+                En tant que développeur Frontend, je suis obsédé par l'expérience utilisateur 
+                et la création d'interfaces visuellement attrayantes et intuitives. Je maîtrise les langages de balisage,
+                 les styles et les frameworks Frontend pour créer des expériences web fluides et réactives. 
+              </p>
+              <div class="w-full flex justify-center pt-5 pb-5">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+                <a href="#" class="mx-5 text-blue-500">Voir profil</a>
+              </div>
             </div>
-        </section>
-        <div class="voir"><a href="#">Voir d'autres -></a></div>
-    </main>
+          </div>
+        </div>
+    </div>
+    
+     <!-- Bouton "Voir d'autres" -->
+     <div class="voir text-center w-full mt-8">
+      <a href="#" class="text-blue-500 font-bold">Voir d'autres -></a>
+    </div>
     <br>
     <br>
-    <h2 id="h2">Notre programme d'études complet, conçu pour les élèves</h2>
+    <h2 id="h2" class="text-3xl font-bold text-gray-900 text-center mb-8">Notre programme d'études complet, conçu pour les élèves</h2>
     <div class="parent">
         <div class="div1">
             <div class="program">
@@ -144,164 +210,375 @@
         </div>
         <div class="div2">
             <div class="registration-card">
-                <h2>Créer un compte</h2>
                 <form action="register.php" method="post">
-                    <div class="form-group">
-                        <label for="name">Nom:</label>
-                        <input type="text" id="name" name="name" required>
+                  <div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+                    <div class="sm:mx-auto sm:w-full sm:max-w-md">
+                      <img class=" h-40 w-full object-contain" src="images/view-globe-with-graduation-cap-books-education-day_23-2150980053.jpg" alt="globe">
+                      <h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
+                            Créer un compte
+                        </h2>
+                        <p class="mt-2 text-center text-sm leading-5 text-gray-500 max-w">
+                            Ou
+                            <a href="#"
+                                class="font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+                                Connecter vous
+                            </a>
+                        </p>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Adresse e-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Mot de passe:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password_confirmation">Confirmer le mot de passe:</label>
-                        <input type="password" id="password_confirmation" name="password_confirmation" required>
-                    </div>
-                    <button type="submit">Créer un compte</button>
+                  
+                      <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+                          <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+                              <form method="POST" action="#">
+                                  <div>
+                                      <label for="email" class="block text-sm font-medium leading-5  text-gray-700">Nom:</label>
+                                      <div class="mt-1 relative rounded-md shadow-sm">
+                                          <input id="name" name="name" placeholder="Nom" type="text" required=""
+                                              class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                                          <div class="hidden absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                              <svg class="h-5 w-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                                  <path fill-rule="evenodd"
+                                                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                                                      clip-rule="evenodd">
+                                                  </path>
+                                              </svg>
+                                          </div>
+                                      </div>
+                                  </div>
+                  
+                                  <div class="mt-6">
+                                      <label for="username" class="block text-sm font-medium leading-5 text-gray-700">Prenom:</label>
+                                      <div class="mt-1 flex rounded-md shadow-sm">
+                                          
+                                          <input id="username" name="username" placeholder="Prenom" type="text" required=""
+                                              class="flex-1  border border-gray-300 form-input pl-3 block w-full rounded-none rounded-r-md transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                                      </div>
+                                  </div>
+                  
+                                  <div class="mt-6">
+                                      <label for="email" class="block text-sm font-medium leading-5 text-gray-700">
+                                        Adresse e-mail:
+                                      </label>
+                                      <div class="mt-1 relative rounded-md shadow-sm">
+                                          <input id="email" name="email" placeholder="exemple@example.com" type="email"
+                                              required=""
+                                              class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                                          <div class="hidden absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                              <svg class="h-5 w-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                                  <path fill-rule="evenodd"
+                                                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                                                      clip-rule="evenodd"></path>
+                                              </svg>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="mt-6">
+                                    <label for="password_confirmation" class="block text-sm font-medium leading-5 text-gray-700">
+                                      Selectionner
+                                    </label>
+                                    <div class="mt-1 rounded-md shadow-sm">
+                                        <input id="password_confirmation" name="password_confirmation" placeholder="Selectionner" type="password" required=""
+                                            class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                                    </div>
+                                </div>
+                  
+                                  <div class="mt-6">
+                                      <label for="password" class="block text-sm font-medium leading-5 text-gray-700">
+                                        Mot de passe:
+                                      </label>
+                                      <div class="mt-1 rounded-md shadow-sm">
+                                          <input id="password" name="password" placeholder="Mot de passe" type="password" required=""
+                                              class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
+                                      </div>
+                                  </div>
+                  
+                                  
+                  
+                                  <div class="mt-6">
+                                      <span class="block w-full rounded-md shadow-sm">
+                                          <button type="submit"
+                                              class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                                              Créer un compte
+                                          </button>
+                                      </span>
+                                  </div>
+                              </form>
+                  
+                          </div>
+                      </div>
+                  </div>
                 </form>
         
             </div>
         </div>
     </div>
 
-<main>
-    <h2 id="h2">Nos annonces</h2>
+
+  <h2 id="h2" class="text-3xl font-bold text-gray-900 text-center mb-8">Nos annonces</h2>
     <div class="">
-        
-            <h2>Projets praiques</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ducimus fugiat,<br>
-                 reprehenderit itaque magnam reiciendis adipisci consequuntur dignissimos molestiae <br>
-                 omnis eligendi culpa earum, nemo harum ratione facilis quam exercitationem voluptate!</p>
-            <div class="grid-container">
-                <div>
-                    <span>+10</span>
-                    <p>Projets</p>
-                </div>           
-                 <div>
-                    <span>+06</span>
-                    <p>Domaines</p>
-                </div>
-            </div>
-            <div>
-                <h5>Communication</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, <br>
-                    quas! Modi, aliquam dolorem! Nostrum tempore eos asperioresbr
-                     mollitia rerum quod corporis. <br>Quidem, 
-                    similique deleniti error dicta laborum pariatur suscipit vel!</p>
-            </div>
-        
+            <section class="text-gray-600 body-font bg-white dark:bg-slate-900">
+              <div class="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
+                  <div
+                      class="lg:flex-grow mt-5 md:mt-0   md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                      <h1
+                          class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+                          Projets praiques
+                      </h1>
+                      <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed dark:text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ducimus fugiat,<br>
+                        reprehenderit itaque magnam reiciendis adipisci consequuntur dignissimos molestiae <br>
+                        omnis eligendi culpa earum, nemo harum ratione facilis quam exercitationem voluptate!
+                      </p>
+                      <div class="flex justify-center">
+                          <a href="#"
+                              class="inline-flex text-white bg-green-600 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-600 rounded text-lg">
+                              +10 Projets
+                              
+                          </a>
+                          <a href="#"
+                              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                              +06
+                              Domaines</a>
+                      </div>
+                  </div>
+                  <section class="my-8 sm:my-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 p-6">
+                    <div class="flex flex-col justify-center">
+                        <div class="flex flex-col h-full shadow justify-between rounded-lg pb-8 p-6 xl:p-8 mt-3 bg-gray-50">
+                            <div>
+                                <h4 class=" font-bold text-2xl leading-tight">Communication</h4>
+                                <div class="my-4">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, <br>
+                                      quas! Modi, aliquam dolorem! Nostrum tempore eos asperioresbr
+                                       mollitia rerum quod corporis. <br>Quidem, 
+                                      similique deleniti error dicta laborum pariatur suscipit vel!</p>
+                                </div>
+                            </div>
+                            <div>
+                              <a class="mt-1 inline-flex font-bold items-center border-2 border-transparent outline-none focus:ring-1 focus:ring-offset-2 focus:ring-link active:bg-link active:text-gray-700 active:ring-0 active:ring-offset-0 leading-normal bg-link text-gray-700 hover:bg-opacity-80 text-base rounded-lg py-1.5"
+                                    aria-label="Quick Start" target="_self" href="/learn">Oumy Fall chargée de la communication<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        class="duration-100 ease-in transition -rotate-90 inline ml-1"
+                                        style="min-width:20px;min-height:20px">
+                                        <g fill="none" fill-rule="evenodd" transform="translate(-446 -398)">
+                                            <path fill="currentColor" fill-rule="nonzero"
+                                                d="M95.8838835,240.366117 C95.3957281,239.877961 94.6042719,239.877961 94.1161165,240.366117 C93.6279612,240.854272 93.6279612,241.645728 94.1161165,242.133883 L98.6161165,246.633883 C99.1042719,247.122039 99.8957281,247.122039 100.383883,246.633883 L104.883883,242.133883 C105.372039,241.645728 105.372039,240.854272 104.883883,240.366117 C104.395728,239.877961 103.604272,239.877961 103.116117,240.366117 L99.5,243.982233 L95.8838835,240.366117 Z"
+                                                transform="translate(356.5 164.5)"></path>
+                                            <polygon points="446 418 466 418 466 398 446 398"></polygon>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <div class="flex flex-col h-full shadow justify-between rounded-lg pb-8 p-6 xl:p-8 mt-3 bg-gray-50">
+                            <div>
+                                <h4 class=" font-bold text-2xl leading-tight">Communication</h4>
+                                <div class="my-4">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, <br>
+                                      quas! Modi, aliquam dolorem! Nostrum tempore eos asperioresbr
+                                       mollitia rerum quod corporis. <br>Quidem, 
+                                      similique deleniti error dicta laborum pariatur suscipit vel!</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="mt-1 inline-flex font-bold items-center border-2 border-transparent outline-none focus:ring-1 focus:ring-offset-2 focus:ring-link active:bg-link active:text-gray-700 active:ring-0 active:ring-offset-0 leading-normal bg-link text-gray-700 hover:bg-opacity-80 text-base rounded-lg py-1.5"
+                                    aria-label="API Reference" target="_self" href="/reference/react">Oumy Fall chargée de la communication<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        class="duration-100 ease-in transition -rotate-90 inline ml-1"
+                                        style="min-width:20px;min-height:20px">
+                                        <g fill="none" fill-rule="evenodd" transform="translate(-446 -398)">
+                                            <path fill="currentColor" fill-rule="nonzero"
+                                                d="M95.8838835,240.366117 C95.3957281,239.877961 94.6042719,239.877961 94.1161165,240.366117 C93.6279612,240.854272 93.6279612,241.645728 94.1161165,242.133883 L98.6161165,246.633883 C99.1042719,247.122039 99.8957281,247.122039 100.383883,246.633883 L104.883883,242.133883 C105.372039,241.645728 105.372039,240.854272 104.883883,240.366117 C104.395728,239.877961 103.604272,239.877961 103.116117,240.366117 L99.5,243.982233 L95.8838835,240.366117 Z"
+                                                transform="translate(356.5 164.5)"></path>
+                                            <polygon points="446 418 466 418 466 398 446 398"></polygon>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+              </div>
+          </section>
     </div>
-</main>
 
-<main>
-    <h2 id="h2">Vous pouvez aussi entrer en contact avec nos professeurs</h2>
-    <section class="tuteurs">
-      
-      <div class="tuteur">
-        <img src="hapsatou-thiam.jpg" alt="Hapsatou Thiam">
-        <h3>Hapsatou Thiam</h3>
-        <p>Matière: Anglais</p>
-        <a href="#">Voir profil</a>
+    <h2 id="h2" class="text-3xl font-bold text-gray-900 text-center mb-8">Vous pouvez aussi entrer en contact avec nos <br>professeur</h2>
+    <section class="flex justify-center items-center  min-h-screen">
+      <!-- Première carte -->
+      <div class="max-w-lg w-full mx-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="images/medium-shot-woman-working-as-lawyer_23-2151202447.jpg" alt="Mountain" class="w-full h-64 object-cover">
+              <div class="p-6">
+                  <h2 class="text-2xl font-bold text-gray-800 mb-2">Hapsatou Thiam</h2>
+                  <p class="text-gray-700 leading-tight mb-4">Matière: Anglais</p>
+                  <div class="w-full flex justify-center pt-5 pb-5">
+                      <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+                      <a href="#" class="mx-5 text-blue-500">Voir profil</a>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="tuteur">
-        <img src="mariam-thiam.jpg" alt="Mariam Thiaw">
-        <h3>Mariam Thiaw</h3>
-        <p>Matière: Français</p>
-        <a href="#">Voir profil</a>
+  
+      <!-- Deuxième carte -->
+      <div class="max-w-lg w-full mx-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="images/medium-shot-woman-working-as-lawyer_23-2151202453.jpg" alt="Mountain" class="w-full h-64 object-cover">
+              <div class="p-6">
+                  <h2 class="text-2xl font-bold text-gray-800 mb-2">Deuxième Personne</h2>
+                  <p class="text-gray-700 leading-tight mb-4">Matière: Mathématiques</p>
+                  <div class="w-full flex justify-center pt-5 pb-5">
+                      <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+                      <a href="#" class="mx-5 text-blue-500">Voir profil</a>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="tuteur">
-        <img src="malang-marna.jpg" alt="Malang Marna">
-        <h3>Malang Marna</h3>
-        <p>Matière: Mathématiques</p>
-        <a href="#">Voir profil</a>
+  
+      <!-- Troisième carte -->
+      <div class="max-w-lg w-full mx-4">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="images/teacher-giving-engaging-lecture-front-chalkboard-covered-equations-ai-generated_497837-16045.jpg" alt="Mountain" class="w-full h-64 object-cover">
+              <div class="p-6">
+                  <h2 class="text-2xl font-bold text-gray-800 mb-2">Troisième Personne</h2>
+                  <p class="text-gray-700 leading-tight mb-4">Matière: Sciences</p>
+                  <div class="w-full flex justify-center pt-5 pb-5">
+                      <svg width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+                      <a href="#" class="mx-5 text-blue-500">Voir profil</a>
+                  </div>
+              </div>
+          </div>
       </div>
+  </section>
+  
+
+  
+      <section class="bg-[#1D1D1D] text-black py-32 min-h-screen">
+        <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+            <h2 class="mb-12 text-4xl font-bold leading text-center sm:text-5xl">Questions fréquemment posées</h2>
+            <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+                <details>
+                    <summary class="py-2 outline-none cursor-pointer focus:underline">Comment inscrire son enfant ?</summary>
+                    <div class="px-4 pb-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas est, 
+                          sed quia consequuntur ea dolores quos nisi cupidatat fugiat nulla pariatur.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary class="py-2 outline-none cursor-pointer focus:underline">Quels sont les programmes académiques offerts ici ?</summary>
+                    <div class="px-4 pb-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas est, 
+                          sed quia consequuntur ea dolores quos nisi cupidatat fugiat nulla pariatur.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary class="py-2 outline-none cursor-pointer focus:underline">Quelles sont les activités parascolaires disponibles pour les élèves ?</summary>
+                    <div class="px-4 pb-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas est, 
+                          sed quia consequuntur ea dolores quos nisi cupidatat fugiat nulla pariatur.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary class="py-2 outline-none cursor-pointer focus:underline">Comment l'établissement encourage-t-il l'engagement des parents dans la vie scolaire ?</summary>
+                    <div class="px-4 pb-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas est, 
+                          sed quia consequuntur ea dolores quos nisi cupidatat fugiat nulla pariatur.</p>
+                    </div>
+                </details>
+              
+            </div>
+        </div>
     </section>
-  </main>
+ 
 
-  <main>
-    <section class="faq">
-        <h2 id="h2">Questions fréquemment posées</h2>
-      
-        <div class="faq-item">
-          <img src="image.jpg" alt="Comment inscrire son enfant ?" class="faq-image">
-          <h3>Comment inscrire son enfant ?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas est, 
-          sed quia consequuntur ea dolores quos nisi cupidatat fugiat nulla pariatur.</p>
-        </div>
-      
-        <div class="faq-item">
-          <img src="image.jpg" alt="Quels sont les programmes académiques offerts ici ?" class="faq-image">
-          <h3>Quels sont les programmes académiques offerts ici ?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas est, 
-          sed quia consequuntur ea dolores quos nisi cupidatat fugiat nulla pariatur.</p>
-        </div>
-      
-        <div class="faq-item">
-          <img src="image.jpg" alt="Quelles sont les activités parascolaires disponibles pour les élèves ?" class="faq-image">
-          <h3>Quelles sont les activités parascolaires disponibles pour les élèves ?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas est, 
-          sed quia consequuntur ea dolores quos nisi cupidatat fugiat nulla pariatur.</p>
-        </div>
-      
-        <div class="faq-item">
-          <img src="image.jpg" alt="Comment l'établissement encourage-t-il l'engagement des parents dans la vie scolaire ?" class="faq-image">
-          <h3>Comment l'établissement encourage-t-il l'engagement des parents dans la vie scolaire ?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas est, 
-          sed quia consequuntur ea dolores quos nisi cupidatat fugiat nulla pariatur.</p>
-        </div>
-      </section>
-      
-  </main>
-  <main>
+
+
+
     <h2 id="h2">Nos partenaires</h2>
     <section class="partenaires">
         
         <div class="partenaire">
             <h3>Simplon</h3>
-            <img src="https://simplon.co/" alt="Logo Simplon">
+            <img src="images/téléchargement (5).png" alt="Logo Simplon">
         </div>
         <div class="partenaire">
             <h3>SGBS</h3>
-            <img src="https://fr.wikipedia.org/wiki/Fichier:Sgbs_logo.PNG" alt="Logo SGBS">
+            <img src="images/téléchargement (7).png" alt="Logo SGBS">
         </div>
         <div class="partenaire">
             <h3>Sonatel</h3>
-            <img src="http://www.sonatel.sn/" alt="Logo Sonatel">
+            <img src="images/téléchargement (6).png" alt="Logo Sonatel">
         </div>
         <div class="partenaire">
             <h3>Comat Technologie</h3>
-            <img src="https://comat.space/en/homepage/" alt="Logo Comat Technologie">
+            <img src="images/logo normal size.PNG" alt="Logo Comat Technologie">
         </div>
     </section>
-  </main>
+  
 
-    <footer>
-        <div class="footer-section-1">
-            <a href="#" class="footer-logo">
-              <img src="logo.png" alt="Logo">
+    
+
+  <footer >
+  <div class="mt-8bg-violet-900 p-8 pt-9">
+    <div class="mx-auto  ml-32  max-w-[1166px] px-4 xl:px-0 text-left">
+      <div class="flex mr-32 gap-12   w-full sm:px-[18px] md:flex-row md:px-10">
+        <div class="md:w-[316px]  mb-6 md:mb-0">
+          <h1 class="text-white font-extrabold">
+            KARANG
+          </h1>
+          <p class="mt-[18px] text-[15px] w-32 font-normal text-white/[80%]">
+            KARANG est une plateforme de suivi éducatif, où les parents peuvent suivre de près l'évolution de leurs enfants.
+          </p>
+          <div class="mt-[18px] flex gap-4">
+            <a class="hover:scale-110" target="_blank" href="#">
+              <img alt="facebook icon" loading="lazy" width="36" height="36" decoding="async" style="color:transparent" src="" />
             </a>
-            <ul class="social-media-links">
-              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
-              <a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-              <a href="#" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a>
-            </ul>
+            <a class="hover:scale-110" target="_blank" href="/">
+              <img alt="linkedin icon" loading="lazy" width="36" height="36" decoding="async" style="color:transparent" src="" />
+            </a>
+            <a class="hover:scale-110" target="_blank" href="/">
+              <img alt="instagram icon" loading="lazy" width="36" height="36" decoding="async" style="color:transparent" src="" />
+            </a>
+            <a class="hover:scale-110" target="_blank" href="">
+              <img alt="twitter icon" loading="lazy" width="36" height="36" decoding="async" style="color:transparent" src="" />
+            </a>
+            <a class="hover:scale-110" target="_blank" href="/">
+              <img alt="youtube icon" loading="lazy" width="36" height="36" decoding="async" style="color:transparent" src="" />
+            </a>
           </div>
-          <div>
+        </div>
+        <div class="md:w-[316px] col-3 mr-32  mb-6 md:mb-0 " >
+          <h3 class="font-Inter text-[14px] font-medium text-white">Explorer</h3>
+          <p class="font-Inter text-[12px] font-medium text-white">>> À propos de nous</p>
+          <p  class="font-Inter text-[14px] font-medium text-[#fff] mt-[23px]">>>Blog</p>
+          <p  class="font-Inter text-[14px] font-medium text-[#fff] mt-[23px]">>> Programme établissement</p>
+          <p  class="font-Inter text-[14px] font-medium text-[#fff] mt-[23px]">>> Devenir tuteur</p>
+          <p  class="font-Inter text-[14px] font-medium text-[#fff] mt-[23px]">>> Contactez nous</p>
+        </div>
+        <div class="md:w-[316px] mb-6 mr-32  md:mb-0">
+          <h3 class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Liens utiles</h3>
+          <ul>
+            <li class="mt-[15px]"><a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold" href="/">>> Politique de confidentialité</a></li>
+            <li class="mt-[15px]"><a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold" href="/our-tutors">>> Conditions d'utilisation</a></li>
+            <li class="mt-[15px]"><a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold" href="/become-a-tutor">>> Politique de remboursement</a></li>
+          </ul>
+        </div>
+        <div class="md:w-[316px] mr-32 ">
+          <h3 class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Contact</h3>
+          <p  class="font-Inter text-[14px] font-medium text-white">+221 33 123 45 67</p>
+          <p  class="font-Inter text-[14px] font-medium text-[#fff] mt-[23px]">montuteur@tuteur.ecole</p>
+          <p  class="font-Inter text-[14px] font-medium text-[#fff] mt-[23px]">Ouakam cité batrain</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center pb-8 pt-[9px] md:py-8">
+        <p class="text-[10px] font-normal text-white md:text-[12px]">
+          Copyright 2024 KARANG| Designer par ADAMA DABO.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-          </div>
-          <div class="footer-section-2">
-            <p class="footer-contact-info">
-              <a href="mailto:info@example.com">info@example.com</a>
-              <br>
-              <a href="tel:+1234567890">(123) 456-7890</a>
-            </p>
-          </div>
-        <p>&copy; 2024 KARANG| Designer par ADAMA DABO.</p>
-    </footer>
 </body>
 </html>
