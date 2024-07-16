@@ -42,7 +42,13 @@ h1 {
     height: 100%; /* Assure que l'image occupe toute la hauteur du conteneur */
     width: auto; /* Maintient le ratio de l'image */
 }
-
+.bg-hero {
+    background-color: #1b99d4;
+    height: 400px; 
+}
+.bg-hero img {
+    max-height: 400px; 
+}
 
 
 .stat {
@@ -221,16 +227,16 @@ h1 {
     .partenaires {
         max-width: 100%;
         margin: 0 auto;
+        margin-bottom: 20px;
         display: flex;
         justify-content: space-around;
-        gap: 20px;
-        flex-wrap: nowrap;
+
     }
     
     .partenaires .partenaire {
         flex: 1;
         margin-bottom: 20px;
-        padding: 0px;
+        padding: 10px;
         background-color: #f9f9f9;
         border: 2px solid rgb(156, 156, 156);
         border-radius: 8px;
